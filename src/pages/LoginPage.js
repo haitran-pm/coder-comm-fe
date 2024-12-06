@@ -50,8 +50,7 @@ function LoginPage() {
 
     try {
       await auth.login({ email, password }, () => {
-        console.log("This is login callback");
-        // navigate(from, { replace: true });
+        navigate(from, { replace: true });
       });
     } catch (error) {
       reset();
